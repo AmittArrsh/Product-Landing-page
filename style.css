@@ -10,32 +10,42 @@
 
 body * + * {
     margin-top: 1.5em;
+    font-size: 1.2rem;
 }
 
 header {
-    border: 2px solid red;
-    height: 200px;
+    /* border: 2px solid red; */
+    /* height: 200px; */
     display: flex;
     flex-direction: row;
-    align-content: space-between;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    background-color: #fff;
+    width: 100%;
 }
+
+main {
+    margin-top: 10em;
+}
+
 
 
 #header-img {
     max-width: 120px;
 }
 
-
-
 nav > ul {
-    border: 1px solid blue;
+    /* border: 1px solid blue; */
     display: flex;
     list-style-type: none;
-   
+    margin-top: .5em;
+    margin-right: 3em;
+    
 }
+
  nav ul li {
-     margin: 0;
-     border: 1px solid red;
+   margin-top: 0;
  }
 
  .nav-link {
@@ -54,11 +64,7 @@ nav > ul {
     color: red;
 }
 
-@media (min-width: 720px){
-   body {
-       background-color: yellow;
-   }
-}
+
 
 ul {
     display: flex;
@@ -66,10 +72,11 @@ ul {
 
 .products {
     display: flex;
+    flex-direction: column;
     margin-left: auto;
     margin-right: auto;
     width: max-content;
-    border: 3px solid green;
+    /* border: 3px solid green; */
 }
 
 .product {
@@ -97,3 +104,20 @@ iframe {
     border: 5px solid blue;
 }
 
+#submit{
+    background-color: orangered;
+    padding: .5em 1.5em;
+    color: #fff;
+    border: none;
+    font-weight: 700;
+}
+#email {
+    padding: .5em 1em;
+}
+
+
+@media (min-width: 720px){
+  .products {
+      flex-direction: row;
+  }
+ }
