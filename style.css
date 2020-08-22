@@ -14,19 +14,18 @@ body * + * {
 
 header {
     border: 2px solid red;
+    height: 200px;
     display: flex;
+    flex-direction: row;
+    align-content: space-between;
 }
+
 
 #header-img {
     max-width: 120px;
 }
 
-nav {
-    position: fixed;
-    top: 0;
-    margin-left: auto;
-    margin-right: 0
-}
+
 
 nav > ul {
     border: 1px solid blue;
@@ -64,3 +63,37 @@ nav > ul {
 ul {
     display: flex;
 }
+
+.products {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    width: max-content;
+    border: 3px solid green;
+}
+
+.product {
+    border: 2px solid red;
+    margin-top: 0;
+    text-align: center;
+    padding: 1em;
+    margin: 1em;
+}
+
+p, label, input {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+form {
+    text-align: center;
+}
+
+iframe {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border: 5px solid blue;
+}
+
